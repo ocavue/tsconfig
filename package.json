@@ -1,0 +1,23 @@
+{
+  "name": "@ocavue/tsconfig",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "A collection of reusable TypeScript configurations",
+  "author": "ocavue <ocavue@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/ocavue",
+  "homepage": "https://github.com/ocavue/tsconfig#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocavue/tsconfig.git"
+  },
+  "bugs": "https://github.com/ocavue/tsconfig/issues",
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "config"
+  ],
+  "exports": {
+    "base": "./base.json"
+  }
+}
