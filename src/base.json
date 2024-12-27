@@ -36,5 +36,8 @@
         "verbatimModuleSyntax": true,
         // Ensure that casing is correct in imports.
         "forceConsistentCasingInFileNames": true,
+        // Allow TypeScript to cache build information and skip compilation
+        // when no changes are detected.
+        "composite": true
     }
 }
