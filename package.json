@@ -18,6 +18,9 @@
         "config"
     ],
     "exports": {
-        "base": "./base.json"
+        "./base": "./src/base.json",
+        "./dom": "./src/dom.json",
+        "./bundler": "./src/bundler.json",
+        "./tsc": "./src/tsc.json"
     }
 }
