@@ -1,0 +1,8 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "declaration": true,
+        "outDir": "${configDir}/dist",
+        "tsBuildInfoFile": "${configDir}/dist/tsconfig.tsbuildinfo"
+    },
+}

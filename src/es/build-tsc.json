@@ -1,0 +1,9 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": [
+        "../shared/base.json",
+        "../include/src.json",
+        "../module/node.json",
+        "../out/dist.json",
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": [
+        "../shared/base.json",
+        "../include/all.json",
+        "../module/bundler.json",
+        "../out/hidden.json",
+    ]
+}
