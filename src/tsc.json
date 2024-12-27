@@ -5,6 +5,9 @@
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
         "declaration": true,
-        "outDir": "${configDir}/dist"
-    }
+        "rootDir": "${configDir}/src",
+        "outDir": "${configDir}/dist",
+        "tsBuildInfoFile": "${configDir}/dist/.tsbuildinfo"
+    },
+    "include": ["${configDir}/src"]
 }
