@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/ocavue/tsconfig/compare/v0.1.1...v0.1.2) (2024-12-28)
+
+
+### Continuous Integration
+
+* remove build step ([725d4f5](https://github.com/ocavue/tsconfig/commit/725d4f51346b40c6573f8e0de927eaf8d3a0ed91))
+
 ## [0.1.1](https://github.com/ocavue/tsconfig/compare/v0.1.0...v0.1.1) (2024-12-28)
 
 
