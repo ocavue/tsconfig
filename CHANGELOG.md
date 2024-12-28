@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/ocavue/tsconfig/compare/v0.1.0...v0.1.1) (2024-12-28)
+
+
+### Miscellaneous Chores
+
+* trigger release ([842d880](https://github.com/ocavue/tsconfig/commit/842d8804e79161daf3360452cead8bfcbe5b81e9))
+
 ## 0.1.0 (2024-12-28)
 
 
