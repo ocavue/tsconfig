@@ -1,9 +1,12 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "outDir": "${configDir}/node_modules/.cache/ocavue-tsconfig/root",
+        "tsBuildInfoFile": "${configDir}/node_modules/.cache/ocavue-tsconfig/root/tsconfig.tsbuildinfo"
+    },
     "extends": [
         "../shared/base.json",
         "../include/root.json",
         "../module/bundler.json",
-        "../out/hidden.json",
     ]
 }

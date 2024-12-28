@@ -38,6 +38,6 @@
         "forceConsistentCasingInFileNames": true,
         // Allow TypeScript to cache build information and skip compilation
         // when no changes are detected.
-        "composite": true
+        "composite": true,
     }
 }
