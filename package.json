@@ -26,5 +26,8 @@
         "./dom/build-bundler": "./src/dom/build-bundler.json",
         "./dom/build-tsc": "./src/dom/build-tsc.json",
         "./dom/root": "./src/dom/root.json"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
