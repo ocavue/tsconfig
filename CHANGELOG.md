@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/ocavue/tsconfig/compare/v0.1.2...v0.1.3) (2024-12-28)
+
+
+### Bug Fixes
+
+* set rootDir for build-tsc ([1f6a14c](https://github.com/ocavue/tsconfig/commit/1f6a14c4eb7f9f7c0e64dfec2c0cc88d76c86090))
+
 ## [0.1.2](https://github.com/ocavue/tsconfig/compare/v0.1.1...v0.1.2) (2024-12-28)
 
 
