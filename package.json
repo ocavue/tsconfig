@@ -18,16 +18,6 @@
         "typescript",
         "config"
     ],
-    "exports": {
-        "./es/app": "./src/es/app.json",
-        "./es/build-bundler": "./src/es/build-bundler.json",
-        "./es/build-tsc": "./src/es/build-tsc.json",
-        "./es/root": "./src/es/root.json",
-        "./dom/app": "./src/dom/app.json",
-        "./dom/build-bundler": "./src/dom/build-bundler.json",
-        "./dom/build-tsc": "./src/dom/build-tsc.json",
-        "./dom/root": "./src/dom/root.json"
-    },
     "publishConfig": {
         "access": "public"
     }
