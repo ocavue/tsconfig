@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/ocavue/tsconfig/compare/v0.1.3...v0.2.0) (2025-01-10)
+
+
+### Features
+
+* remove `exports` in package.json for better editor support ([#5](https://github.com/ocavue/tsconfig/issues/5)) ([ff2a020](https://github.com/ocavue/tsconfig/commit/ff2a02032935b3ac5cd0f9be9658cfba050727e6))
+
 ## [0.1.3](https://github.com/ocavue/tsconfig/compare/v0.1.2...v0.1.3) (2024-12-28)
 
 
