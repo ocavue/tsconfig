@@ -1,7 +1,7 @@
 {
     "name": "@ocavue/tsconfig",
     "type": "module",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "A collection of reusable TypeScript configurations",
     "packageManager": "pnpm@9.15.9",
     "author": "ocavue <ocavue@gmail.com>",
