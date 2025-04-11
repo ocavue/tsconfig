@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/ocavue/tsconfig/compare/v0.2.0...v0.3.0) (2025-04-11)
+
+
+### Features
+
+* remove explicit `tsBuildInfoFile` ([#7](https://github.com/ocavue/tsconfig/issues/7)) ([8f87eb1](https://github.com/ocavue/tsconfig/commit/8f87eb194ebb354be8f07844575d43d23b3b1c86))
+
 ## [0.2.0](https://github.com/ocavue/tsconfig/compare/v0.1.3...v0.2.0) (2025-01-10)
 
 
