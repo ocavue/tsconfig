@@ -3,7 +3,7 @@
     "compilerOptions": {
         "outDir": "${configDir}/dist",
         // By default, ._* paths are ignored by npm publish.
-        "tsBuildInfoFile": "${configDir}/dist/._ignore/tsc-tsconfig.tsbuildinfo"
+        "tsBuildInfoFile": "${configDir}/dist/._cache/tsconfig/tsconfig.tsbuildinfo"
     },
     "extends": [
         "../shared/base.json",
