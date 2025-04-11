@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/ocavue/tsconfig/compare/v0.3.1...v0.3.2) (2025-04-11)
+
+
+### Bug Fixes
+
+* trigger a release ([#11](https://github.com/ocavue/tsconfig/issues/11)) ([d908ad4](https://github.com/ocavue/tsconfig/commit/d908ad4f56b97b2a3ad3b8447153f2728bd94cac))
+
 ## [0.3.1](https://github.com/ocavue/tsconfig/compare/v0.3.0...v0.3.1) (2025-04-11)
 
 
