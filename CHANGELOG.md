@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/ocavue/tsconfig/compare/v0.3.0...v0.3.1) (2025-04-11)
+
+
+### Bug Fixes
+
+* tweak `outDir` paths ([#9](https://github.com/ocavue/tsconfig/issues/9)) ([2613270](https://github.com/ocavue/tsconfig/commit/2613270b453f9e1775990b391ca8295587716d41))
+
 ## [0.3.0](https://github.com/ocavue/tsconfig/compare/v0.2.0...v0.3.0) (2025-04-11)
 
 
