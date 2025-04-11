@@ -2,7 +2,7 @@
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
         "outDir": "${configDir}/dist",
-        "tsBuildInfoFile": "${configDir}/node_modules/.cache/ocavue/tsconfig/src.tsbuildinfo"
+        "tsBuildInfoFile": "${configDir}/node_modules/.cache/ocavue-tsconfig/build-tsc/out/out.tsbuildinfo"
     },
     "extends": [
         "../shared/base.json",
