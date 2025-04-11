@@ -2,7 +2,8 @@
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
         "outDir": "${configDir}/dist",
-        "tsBuildInfoFile": "${configDir}/node_modules/.cache/ocavue-tsconfig/build-tsc/out/out.tsbuildinfo"
+        // By default, ._* paths are ignored by npm publish.
+        "tsBuildInfoFile": "${configDir}/dist/._ignore/tsc-tsconfig.tsbuildinfo"
     },
     "extends": [
         "../shared/base.json",
