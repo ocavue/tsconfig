@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/ocavue/tsconfig/compare/v0.3.2...v0.3.3) (2025-04-13)
+
+
+### Bug Fixes
+
+* put `tsBuildInfoFile` under `dist/` ([#13](https://github.com/ocavue/tsconfig/issues/13)) ([8d1f1d4](https://github.com/ocavue/tsconfig/commit/8d1f1d410c804a66a3b31dce92dd12d17e8faa55))
+
 ## [0.3.2](https://github.com/ocavue/tsconfig/compare/v0.3.1...v0.3.2) (2025-04-11)
 
 
