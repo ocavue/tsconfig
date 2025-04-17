@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.5](https://github.com/ocavue/tsconfig/compare/v0.3.4...v0.3.5) (2025-04-17)
+
+
+### Bug Fixes
+
+* correct `include` field for tsc ([#17](https://github.com/ocavue/tsconfig/issues/17)) ([168a86f](https://github.com/ocavue/tsconfig/commit/168a86f495e0b26e79884c9e2ce40d1cc0f450fd))
+
 ## [0.3.4](https://github.com/ocavue/tsconfig/compare/v0.3.3...v0.3.4) (2025-04-17)
 
 
