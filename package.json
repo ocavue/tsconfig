@@ -21,7 +21,8 @@
     "publishConfig": {
         "access": "public"
     },
-    "dependencies": {
-        "jsonc-parser": "^3.3.1"
+    "devDependencies": {
+        "@types/bun": "^1.2.9",
+        "prettier": "^3.5.3"
     }
 }
