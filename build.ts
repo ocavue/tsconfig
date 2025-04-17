@@ -60,7 +60,7 @@ function genInclude(include: "all" | "root" | "src"): string {
     case "root":
       return '"include": ["${configDir}/*"],';
     case "src":
-      return '"include": ["src/**/*"],';
+      return '"include": ["${configDir}/src/**/*"],';
   }
 }
 

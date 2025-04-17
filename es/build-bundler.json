@@ -47,5 +47,5 @@
     "rootDir": "${configDir}/src"
   },
 
-  "include": ["src/**/*"]
+  "include": ["${configDir}/src/**/*"]
 }
