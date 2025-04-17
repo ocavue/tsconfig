@@ -49,7 +49,11 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
 
-    "rootDir": "${configDir}/src"
+    "rootDir": "${configDir}/src",
+
+    "outDir": "${configDir}/dist",
+    // By default, ._* paths are ignored by npm publish.
+    "tsBuildInfoFile": "${configDir}/dist/._cache/tsconfig_dom_node_src/tsconfig.tsbuildinfo"
   },
 
   "include": ["${configDir}/src/**/*"]

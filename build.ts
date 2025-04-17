@@ -53,14 +53,22 @@ function genCompilerOptionsRootDir(include: "all" | "root" | "src"): string {
   }
 }
 
-function genInclude(include: "all" | "root" | "src"): string {
-  switch (include) {
-    case "all":
-      return '"include": ["${configDir}/**/*"],';
-    case "root":
-      return '"include": ["${configDir}/*"],';
-    case "src":
-      return '"include": ["${configDir}/src/**/*"],';
+function getCompilerOptionsOutDir(
+  environment: "es" | "dom",
+  module: "node" | "bundler",
+  include: "all" | "root" | "src"
+): string {
+  let configDir = '${configDir}'
+  if (include === "src") {
+    return js`
+      "outDir": "${configDir}/dist",
+      // By default, ._* paths are ignored by npm publish.
+      "tsBuildInfoFile": "${configDir}/dist/._cache/tsconfig_${environment}_${module}_${include}/tsconfig.tsbuildinfo",
+    `;
+  } else {
+    return js`
+      "outDir": "${configDir}/node_modules/.cache/tsconfig_${environment}_${module}_${include}/out"
+    `;
   }
 }
 
@@ -112,8 +120,21 @@ function genCompilerOptions(
       ${genCompilerOptionsModule(module)}
 
       ${genCompilerOptionsRootDir(include)}
+
+      ${getCompilerOptionsOutDir(environment, module, include)}
     },
   `;
+}
+
+function genInclude(include: "all" | "root" | "src"): string {
+  switch (include) {
+    case "all":
+      return '"include": ["${configDir}/**/*"],';
+    case "root":
+      return '"include": ["${configDir}/*"],';
+    case "src":
+      return '"include": ["${configDir}/src/**/*"],';
+  }
 }
 
 function genConfig(

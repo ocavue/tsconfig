@@ -44,7 +44,11 @@
     "moduleResolution": "bundler",
     "emitDeclarationOnly": true,
 
-    "rootDir": "${configDir}/src"
+    "rootDir": "${configDir}/src",
+
+    "outDir": "${configDir}/dist",
+    // By default, ._* paths are ignored by npm publish.
+    "tsBuildInfoFile": "${configDir}/dist/._cache/tsconfig_es_bundler_src/tsconfig.tsbuildinfo"
   },
 
   "include": ["${configDir}/src/**/*"]

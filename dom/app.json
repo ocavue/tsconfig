@@ -48,7 +48,9 @@
 
     "module": "preserve",
     "moduleResolution": "bundler",
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+
+    "outDir": "${configDir}/node_modules/.cache/tsconfig_dom_bundler_all/out"
   },
 
   "include": ["${configDir}/**/*"]
