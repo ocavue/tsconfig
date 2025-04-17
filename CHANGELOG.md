@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.6](https://github.com/ocavue/tsconfig/compare/v0.3.5...v0.3.6) (2025-04-17)
+
+
+### Bug Fixes
+
+* add back `outDir` fields ([#19](https://github.com/ocavue/tsconfig/issues/19)) ([345c5e8](https://github.com/ocavue/tsconfig/commit/345c5e84b23152e11e4cfb71238f7df70a257216))
+
 ## [0.3.5](https://github.com/ocavue/tsconfig/compare/v0.3.4...v0.3.5) (2025-04-17)
 
 
