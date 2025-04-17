@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/ocavue/tsconfig/compare/v0.3.3...v0.3.4) (2025-04-17)
+
+
+### Bug Fixes
+
+* inline extends  ([#15](https://github.com/ocavue/tsconfig/issues/15)) ([158f94c](https://github.com/ocavue/tsconfig/commit/158f94c226e73e1263f22cf4d568e40b6e623757))
+
 ## [0.3.3](https://github.com/ocavue/tsconfig/compare/v0.3.2...v0.3.3) (2025-04-13)
 
 
