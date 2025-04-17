@@ -43,24 +43,40 @@ function genCompilerOptionsModule(module: "node" | "bundler"): string {
 }
 
 function genCompilerOptionsRootDir(include: "all" | "root" | "src"): string {
+  let configDir = "${configDir}";
+
   switch (include) {
     case "all":
       return "";
     case "root":
       return "";
     case "src":
-      return '"rootDir": "${configDir}/src",';
+      return js`
+        // Set the root directory to src/ so that the output file structure
+        // in dist/ matches the file structure in src/.
+        "rootDir": "${configDir}/src",
+      `;
   }
 }
 
-function genInclude(include: "all" | "root" | "src"): string {
-  switch (include) {
-    case "all":
-      return '"include": ["${configDir}/**/*"],';
-    case "root":
-      return '"include": ["${configDir}/*"],';
-    case "src":
-      return '"include": ["${configDir}/src/**/*"],';
+function getCompilerOptionsOutDir(
+  environment: "es" | "dom",
+  module: "node" | "bundler",
+  include: "all" | "root" | "src"
+): string {
+  let configDir = "${configDir}";
+  if (include === "src") {
+    return js`
+      // Set the output directory to dist/.
+      "outDir": "${configDir}/dist",
+      // By default, ._* paths are ignored by npm publish.
+      "tsBuildInfoFile": "${configDir}/dist/._cache/tsconfig_${environment}_${module}_${include}/tsconfig.tsbuildinfo",
+    `;
+  } else {
+    return js`
+      // Set the output directory to a directory that would be ignored by almost all tools.
+      "outDir": "${configDir}/node_modules/.cache/tsconfig_${environment}_${module}_${include}/out"
+    `;
   }
 }
 
@@ -112,8 +128,21 @@ function genCompilerOptions(
       ${genCompilerOptionsModule(module)}
 
       ${genCompilerOptionsRootDir(include)}
+
+      ${getCompilerOptionsOutDir(environment, module, include)}
     },
   `;
+}
+
+function genInclude(include: "all" | "root" | "src"): string {
+  switch (include) {
+    case "all":
+      return '"include": ["${configDir}/**/*"],';
+    case "root":
+      return '"include": ["${configDir}/*"],';
+    case "src":
+      return '"include": ["${configDir}/src/**/*"],';
+  }
 }
 
 function genConfig(

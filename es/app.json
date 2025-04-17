@@ -42,7 +42,10 @@
 
     "module": "preserve",
     "moduleResolution": "bundler",
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+
+    // Set the output directory to a directory that would be ignored by almost all tools.
+    "outDir": "${configDir}/node_modules/.cache/tsconfig_es_bundler_all/out"
   },
 
   "include": ["${configDir}/**/*"]
