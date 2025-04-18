@@ -65,7 +65,7 @@ function getCompilerOptionsOutDir(
   include: "all" | "root" | "src"
 ): string {
   let configDir = "${configDir}";
-  if (include === "src") {
+  if (include === "src" && module === "node") {
     return js`
       // Set the output directory to dist/.
       "outDir": "${configDir}/dist",
