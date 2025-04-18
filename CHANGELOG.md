@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.7](https://github.com/ocavue/tsconfig/compare/v0.3.6...v0.3.7) (2025-04-18)
+
+
+### Bug Fixes
+
+* correct `outDir` for build-bundler.json ([#21](https://github.com/ocavue/tsconfig/issues/21)) ([efab1c3](https://github.com/ocavue/tsconfig/commit/efab1c3bbca4024e9997803efed6297bb19782b6))
+
 ## [0.3.6](https://github.com/ocavue/tsconfig/compare/v0.3.5...v0.3.6) (2025-04-17)
 
 
