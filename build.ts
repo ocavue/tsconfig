@@ -42,21 +42,20 @@ function genCompilerOptionsModule(module: "node" | "bundler"): string {
   }
 }
 
-function genCompilerOptionsRootDir(include: "all" | "root" | "src"): string {
+function genCompilerOptionsRootDir(
+  module: "node" | "bundler",
+  include: "all" | "root" | "src"
+): string {
   let configDir = "${configDir}";
 
-  switch (include) {
-    case "all":
-      return "";
-    case "root":
-      return "";
-    case "src":
-      return js`
-        // Set the root directory to src/ so that the output file structure
-        // in dist/ matches the file structure in src/.
-        "rootDir": "${configDir}/src",
-      `;
+  if (module === "node" && include === "src") {
+    return js`
+      // Set the root directory to src/ so that the output file structure
+      // in dist/ matches the file structure in src/.
+      "rootDir": "${configDir}/src",
+    `;
   }
+  return "";
 }
 
 function getCompilerOptionsOutDir(
@@ -127,7 +126,7 @@ function genCompilerOptions(
 
       ${genCompilerOptionsModule(module)}
 
-      ${genCompilerOptionsRootDir(include)}
+      ${genCompilerOptionsRootDir(module, include)}
 
       ${getCompilerOptionsOutDir(environment, module, include)}
     },
