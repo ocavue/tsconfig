@@ -144,7 +144,10 @@ function genInclude(include: "all" | "root" | "src"): string {
   }
 }
 
-function genExclude(): string {
+function genExclude(include: "all" | "root" | "src"): string {
+  if (include === "src") {
+    return "";
+  }
   return '"exclude": ["${configDir}/**/node_modules", "${configDir}/**/dist"]';
 }
 
@@ -158,7 +161,7 @@ function genConfig(
       "$schema": "https://json.schemastore.org/tsconfig",
       ${genCompilerOptions(environment, module, include)}
       ${genInclude(include)}
-      ${genExclude()}
+      ${genExclude(include)}
     }
   `;
 }

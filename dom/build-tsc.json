@@ -59,6 +59,5 @@
     "tsBuildInfoFile": "${configDir}/dist/._cache/tsconfig_dom_node_src/tsconfig.tsbuildinfo"
   },
 
-  "include": ["${configDir}/src/**/*", "${configDir}/src/**/*.json"],
-  "exclude": ["${configDir}/**/node_modules", "${configDir}/**/dist"]
+  "include": ["${configDir}/src/**/*", "${configDir}/src/**/*.json"]
 }
