@@ -48,5 +48,5 @@
     "outDir": "${configDir}/node_modules/.cache/tsconfig_es_bundler_src/out"
   },
 
-  "include": ["${configDir}/src/**/*"]
+  "include": ["${configDir}/src/**/*", "${configDir}/src/**/*.json"]
 }

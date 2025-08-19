@@ -54,5 +54,6 @@
     "outDir": "${configDir}/node_modules/.cache/tsconfig_dom_bundler_all/out"
   },
 
-  "include": ["${configDir}/**/*"]
+  "include": ["${configDir}/**/*", "${configDir}/**/*.json"],
+  "exclude": ["${configDir}/**/node_modules", "${configDir}/**/dist"]
 }

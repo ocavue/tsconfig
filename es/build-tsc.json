@@ -53,5 +53,5 @@
     "tsBuildInfoFile": "${configDir}/dist/._cache/tsconfig_es_node_src/tsconfig.tsbuildinfo"
   },
 
-  "include": ["${configDir}/src/**/*"]
+  "include": ["${configDir}/src/**/*", "${configDir}/src/**/*.json"]
 }

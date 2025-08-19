@@ -136,12 +136,19 @@ function genCompilerOptions(
 function genInclude(include: "all" | "root" | "src"): string {
   switch (include) {
     case "all":
-      return '"include": ["${configDir}/**/*"],';
+      return '"include": ["${configDir}/**/*", "${configDir}/**/*.json"],';
     case "root":
-      return '"include": ["${configDir}/*"],';
+      return '"include": ["${configDir}/*", "${configDir}/**/*.json"],';
     case "src":
-      return '"include": ["${configDir}/src/**/*"],';
+      return '"include": ["${configDir}/src/**/*", "${configDir}/src/**/*.json"],';
   }
+}
+
+function genExclude(include: "all" | "root" | "src"): string {
+  if (include === "src") {
+    return "";
+  }
+  return '"exclude": ["${configDir}/**/node_modules", "${configDir}/**/dist"]';
 }
 
 function genConfig(
@@ -154,6 +161,7 @@ function genConfig(
       "$schema": "https://json.schemastore.org/tsconfig",
       ${genCompilerOptions(environment, module, include)}
       ${genInclude(include)}
+      ${genExclude(include)}
     }
   `;
 }
