@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/ocavue/tsconfig/compare/v0.3.7...v0.4.0) (2025-08-19)
+
+
+### Features
+
+* include json and exclude dist ([#23](https://github.com/ocavue/tsconfig/issues/23)) ([a0c8b0e](https://github.com/ocavue/tsconfig/commit/a0c8b0e37e8d5cdb2b24dc8e8e93204987d00c8b))
+
 ## [0.3.7](https://github.com/ocavue/tsconfig/compare/v0.3.6...v0.3.7) (2025-04-18)
 
 
