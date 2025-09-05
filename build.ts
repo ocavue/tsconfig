@@ -118,6 +118,10 @@ function genCompilerOptions(
       "verbatimModuleSyntax": true,
       // Ensure that casing is correct in imports.
       "forceConsistentCasingInFileNames": true,
+      // Generate source map for the generated JavaScript files.
+      "sourceMap": true,
+      // Generate source map for the generated declaration files.
+      "declarationMap": true,
       // Allow TypeScript to cache build information and skip compilation
       // when no changes are detected.
       "composite": true,
