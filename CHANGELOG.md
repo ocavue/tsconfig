@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.0](https://github.com/ocavue/tsconfig/compare/v0.4.0...v0.5.0) (2025-09-05)
+
+
+### Features
+
+* enable source map ([#27](https://github.com/ocavue/tsconfig/issues/27)) ([e7e3a82](https://github.com/ocavue/tsconfig/commit/e7e3a82b3a36495c57a2886731417c75959b84d6))
+
+
+### Bug Fixes
+
+* fix release workflow ([#26](https://github.com/ocavue/tsconfig/issues/26)) ([42154f7](https://github.com/ocavue/tsconfig/commit/42154f7e3b0eee08eae38a2218a3defda8c11530))
+
 ## [0.4.0](https://github.com/ocavue/tsconfig/compare/v0.3.7...v0.4.0) (2025-08-19)
 
 
