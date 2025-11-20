@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/ocavue/tsconfig/compare/v0.6.0...v0.6.1) (2025-11-20)
+
+
+### Bug Fixes
+
+* enable `allowImportingTsExtensions` for bundlers ([#32](https://github.com/ocavue/tsconfig/issues/32)) ([69ea97b](https://github.com/ocavue/tsconfig/commit/69ea97be666ee3c257f98f24cd841353f7fe8eb8))
+
 ## [0.6.0](https://github.com/ocavue/tsconfig/compare/v0.5.0...v0.6.0) (2025-11-20)
 
 
