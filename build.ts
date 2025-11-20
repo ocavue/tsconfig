@@ -70,11 +70,17 @@ function getCompilerOptionsOutDir(
       "outDir": "${configDir}/dist",
       // By default, ._* paths are ignored by npm publish.
       "tsBuildInfoFile": "${configDir}/dist/._cache/tsconfig_${environment}_${module}_${include}/tsconfig.tsbuildinfo",
+      // Rewrite .ts, .tsx, .mts, and .cts file extensions in relative import
+      // paths to their JavaScript equivalent in output files.
+      "rewriteRelativeImportExtensions": true,
     `;
   } else {
     return js`
       // Set the output directory to a directory that would be ignored by almost all tools.
-      "outDir": "${configDir}/node_modules/.cache/tsconfig_${environment}_${module}_${include}/out"
+      "outDir": "${configDir}/node_modules/.cache/tsconfig_${environment}_${module}_${include}/out",
+      // Allow TypeScript files to import each other with a TypeScript-specific
+      // extension like .ts, .mts, or .tsx.
+      "allowImportingTsExtensions": true,
     `;
   }
 }
@@ -105,11 +111,6 @@ function genCompilerOptions(
       "skipLibCheck": true,
       // Allow JavaScript files to be included in the project.
       "allowJs": true,
-      // Rewrite .ts, .tsx, .mts, and .cts file extensions in relative import
-      // paths to their JavaScript equivalent in output files. Also allow
-      // TypeScript files to import each other with a TypeScript-specific
-      // extension like .ts, .mts, or .tsx.
-      "rewriteRelativeImportExtensions": true,
       // Allow JSON files to be imported as modules.
       "resolveJsonModule": true,
       // Force TypeScript to consider all files as modules. This helps to avoid
