@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/ocavue/tsconfig/compare/v0.6.1...v0.6.2) (2025-12-03)
+
+
+### Bug Fixes
+
+* only includes JSON files for publishing ([#35](https://github.com/ocavue/tsconfig/issues/35)) ([bdc0224](https://github.com/ocavue/tsconfig/commit/bdc0224dce712462983ccd77041134b757dc5557))
+
 ## [0.6.1](https://github.com/ocavue/tsconfig/compare/v0.6.0...v0.6.1) (2025-11-20)
 
 
