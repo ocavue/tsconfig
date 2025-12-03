@@ -1,7 +1,7 @@
 {
     "name": "@ocavue/tsconfig",
     "type": "module",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "description": "A collection of reusable TypeScript configurations",
     "author": "ocavue <ocavue@gmail.com>",
     "license": "MIT",
@@ -17,7 +17,9 @@
         "typescript",
         "config"
     ],
-    "files": ["./**/*.json"],
+    "files": [
+        "./**/*.json"
+    ],
     "publishConfig": {
         "access": "public"
     },
