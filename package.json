@@ -17,6 +17,7 @@
         "typescript",
         "config"
     ],
+    "files": ["./**/*.json"],
     "publishConfig": {
         "access": "public"
     },
