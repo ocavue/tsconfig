@@ -3,7 +3,6 @@
     "type": "module",
     "version": "0.6.1",
     "description": "A collection of reusable TypeScript configurations",
-    "packageManager": "pnpm@10.22.0",
     "author": "ocavue <ocavue@gmail.com>",
     "license": "MIT",
     "funding": "https://github.com/sponsors/ocavue",
