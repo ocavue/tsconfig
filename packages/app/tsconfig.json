@@ -1,5 +1,5 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", "./worker-configuration.d.ts", "./.react-router/"],
+  "include": ["**/*.ts", "**/*.tsx", "./worker-configuration.d.ts",     ".react-router/types/**/*"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": [
@@ -8,6 +8,7 @@
       "vite/client",
       "node"
     ],
+        "rootDirs": [".", "./.react-router/types"],
     "isolatedModules": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
