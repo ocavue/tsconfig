@@ -1,0 +1,33 @@
+{
+  "../../node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx": {
+    "file": "assets/entry.client-BjT9gUH9.js",
+    "name": "entry.client",
+    "src": "../../node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx",
+    "isEntry": true,
+    "imports": [
+      "_chunk-NISHYRIK-D5S-UwoE.js"
+    ]
+  },
+  "_chunk-NISHYRIK-D5S-UwoE.js": {
+    "file": "assets/chunk-NISHYRIK-D5S-UwoE.js",
+    "name": "chunk-NISHYRIK"
+  },
+  "app/root.tsx?__react-router-build-client-route": {
+    "file": "assets/root-E_JViLGW.js",
+    "name": "root",
+    "src": "app/root.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_chunk-NISHYRIK-D5S-UwoE.js"
+    ]
+  },
+  "app/routes/home.tsx?__react-router-build-client-route": {
+    "file": "assets/home-C8ILDbvl.js",
+    "name": "home",
+    "src": "app/routes/home.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_chunk-NISHYRIK-D5S-UwoE.js"
+    ]
+  }
+}
