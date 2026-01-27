@@ -9,6 +9,9 @@ lib-cov
 logs
 node_modules
 temp
+build/
+.wrangler/
+.react-router/
 
 # build output
 dist/
