@@ -1,5 +1,5 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", "worker-configuration.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx", "./worker-configuration.d.ts", "./.react-router/"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": [
