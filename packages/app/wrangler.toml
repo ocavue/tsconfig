@@ -4,3 +4,4 @@ assets = { directory = "./build/client" }
 
 [vars]
 EXAMPLE_VAR = "Hello from environment variables"
+EXAMPLE_VAR2 = "Hello2 from environment variables"

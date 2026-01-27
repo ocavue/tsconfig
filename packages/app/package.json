@@ -7,7 +7,7 @@
     "dev": "react-router dev",
     "build": "react-router build",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "wrangler types && react-router typegen && tsc"
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.13.9",
