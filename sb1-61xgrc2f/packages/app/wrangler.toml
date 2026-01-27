@@ -1,0 +1,6 @@
+name = "app"
+compatibility_date = "2024-11-27"
+assets = { directory = "./build/client" }
+
+[vars]
+EXAMPLE_VAR = "Hello from environment variables"
