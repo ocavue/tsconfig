@@ -98,6 +98,8 @@ function genCompilerOptions(
       "strict": true,
       // Disable unused local variables.
       "noUnusedLocals": true,
+      // Whether to treat unknown side effect imports like "import './styles.css'" as errors.
+      "noUncheckedSideEffectImports": false,
       // Force you to use "override" keyword when overriding a method.
       "noImplicitOverride": true,
       // Disable fallthrough cases in switch statements.
