@@ -1,7 +1,7 @@
 {
     "name": "@ocavue/tsconfig",
     "type": "module",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "description": "A collection of reusable TypeScript configurations",
     "author": "ocavue <ocavue@gmail.com>",
     "license": "MIT",
