@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.3](https://github.com/ocavue/tsconfig/compare/v0.6.2...v0.6.3) (2026-02-12)
+
+
+### Bug Fixes
+
+* set `noUncheckedSideEffectImports` to `false` ([#37](https://github.com/ocavue/tsconfig/issues/37)) ([bee9114](https://github.com/ocavue/tsconfig/commit/bee911450ce5fb78c0c4f5a25ea9780810c3e439))
+
 ## [0.6.2](https://github.com/ocavue/tsconfig/compare/v0.6.1...v0.6.2) (2025-12-03)
 
 
