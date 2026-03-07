@@ -36,7 +36,7 @@ In `tsconfig.json`, add the following content based on your target environment.
   "extends": "@ocavue/tsconfig/dom/app.json",
 
   // If you're building for non-browser environment:
-  "extends": "@ocavue/tsconfig/es/app.json"
+  "extends": "@ocavue/tsconfig/es/app.json",
 }
 ```
 
@@ -63,7 +63,7 @@ In `tsconfig.json`, add the following content:
 // tsconfig.json
 {
   "extends": "@ocavue/tsconfig/es/root.json",
-  "references": [{ "path": "./tsconfig.build.json" }]
+  "references": [{ "path": "./tsconfig.build.json" }],
 }
 ```
 
@@ -82,7 +82,7 @@ In `tsconfig.build.json`, add the following content based on your build tool and
   "extends": "@ocavue/tsconfig/es/build-bundler.json",
 
   // If you're building for non-browser environment and using tsc:
-  "extends": "@ocavue/tsconfig/es/build-tsc.json"
+  "extends": "@ocavue/tsconfig/es/build-tsc.json",
 }
 ```
 
@@ -121,8 +121,8 @@ In the root `tsconfig.json`, add the following content:
   "extends": "@ocavue/tsconfig/es/root.json",
   "references": [
     { "path": "./apps/my-app/tsconfig.json" },
-    { "path": "./packages/my-lib/tsconfig.json" }
-  ]
+    { "path": "./packages/my-lib/tsconfig.json" },
+  ],
 }
 ```
 

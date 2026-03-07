@@ -44,7 +44,7 @@ function genCompilerOptionsModule(module: "node" | "bundler"): string {
 
 function genCompilerOptionsRootDir(
   module: "node" | "bundler",
-  include: "all" | "root" | "src"
+  include: "all" | "root" | "src",
 ): string {
   let configDir = "${configDir}";
 
@@ -61,7 +61,7 @@ function genCompilerOptionsRootDir(
 function getCompilerOptionsOutDir(
   environment: "es" | "dom",
   module: "node" | "bundler",
-  include: "all" | "root" | "src"
+  include: "all" | "root" | "src",
 ): string {
   let configDir = "${configDir}";
   if (include === "src" && module === "node") {
@@ -88,7 +88,7 @@ function getCompilerOptionsOutDir(
 function genCompilerOptions(
   environment: "es" | "dom",
   module: "node" | "bundler",
-  include: "all" | "root" | "src"
+  include: "all" | "root" | "src",
 ): string {
   return js`
     "compilerOptions": {
@@ -96,6 +96,8 @@ function genCompilerOptions(
 
       // Enable all strict type-checking options.
       "strict": true,
+      // Include "./node_modules/@types/node" for Node.js built-in type definitions.
+        "types": ["node"]
       // Disable unused local variables.
       "noUnusedLocals": true,
       // Whether to treat unknown side effect imports like "import './styles.css'" as errors.
@@ -166,7 +168,7 @@ function genExclude(include: "all" | "root" | "src"): string {
 function genConfig(
   environment: "es" | "dom",
   module: "node" | "bundler",
-  include: "all" | "root" | "src"
+  include: "all" | "root" | "src",
 ): string {
   return js`
     {
@@ -182,7 +184,7 @@ async function writeConfig(
   environment: "es" | "dom",
   module: "node" | "bundler",
   include: "all" | "root" | "src",
-  filePath: string
+  filePath: string,
 ) {
   let code = genConfig(environment, module, include);
 
@@ -193,7 +195,7 @@ async function writeConfig(
   } catch (error) {
     console.error(
       `Unable to format the code with prettier:\n===== code =====\n${code}\n===== error =====\n${error}`,
-      { cause: error }
+      { cause: error },
     );
   }
 
