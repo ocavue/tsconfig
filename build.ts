@@ -97,7 +97,7 @@ function genCompilerOptions(
       // Enable all strict type-checking options.
       "strict": true,
       // Include "./node_modules/@types/node" for Node.js built-in type definitions.
-        "types": ["node"]
+      "types": ["node"],
       // Disable unused local variables.
       "noUnusedLocals": true,
       // Whether to treat unknown side effect imports like "import './styles.css'" as errors.
