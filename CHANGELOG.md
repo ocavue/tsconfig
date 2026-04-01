@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/ocavue/tsconfig/compare/v0.7.0...v0.7.1) (2026-04-01)
+
+
+### Bug Fixes
+
+* update `types` ([1f454ca](https://github.com/ocavue/tsconfig/commit/1f454caef13735f5e5a610c1b548cd7c2c47ec25))
+
 ## [0.7.0](https://github.com/ocavue/tsconfig/compare/v0.6.3...v0.7.0) (2026-03-07)
 
 
